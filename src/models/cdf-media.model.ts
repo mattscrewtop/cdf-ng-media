@@ -2,34 +2,34 @@ import { CdfRootModel } 			from './cdf-root.model';
 import { CdfVideoModel } 			from './cdf-video.model';
 
 export class CdfMediaModel extends CdfRootModel
-{  
+{
 	ImageUri: string;
 	YouTubeId: string;
 	VideoList: CdfVideoModel[] = [];
 	HasImage: boolean = false;
 	HasVideo: boolean = false;
 
-	constructor(id?: string, type?: string, title?:string, description?: string, imageUrl?: string, youTubeId?:string, videoList?: CdfVideoModel[])
+	constructor(id?: string, type?: string, title?:string, description?: string, imageUrl?: string, youTubeId?:string, videoList?: CdfVideoModel[], body?: string)
 	{
-		super(id, type, title, description);
-		
+		super(id, type, title, description, body);
+
 		if (imageUrl)
-		{ 
+		{
 			this.ImageUri = imageUrl;
 			this.HasImage = true;
-		}	
-		
+		}
+
 		if (youTubeId)
-		{ 
+		{
 			this.YouTubeId = youTubeId;
 			this.HasVideo = true;
 		}
 
 		if (videoList)
-		{ 
+		{
 			this.VideoList = videoList;
 			this.HasVideo = true;
-		}	
+		}
 	}
 
 	SetImage(uri:string)
@@ -42,5 +42,5 @@ export class CdfMediaModel extends CdfRootModel
 	{
 		this.YouTubeId = youTubeId;
 		this.HasVideo = true;
-	};	
+	};
 }

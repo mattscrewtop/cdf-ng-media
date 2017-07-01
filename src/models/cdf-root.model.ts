@@ -1,29 +1,31 @@
 export class CdfRootModel
-{  
+{
 	Guid: string;
 	Id: string;
 	Type: string;
 	Title: string;
 	Description: string;
+	Body: string;
 
-	constructor(id?: string, type?: string, title?:string, description?: string)
+	constructor(id?: string, type?: string, title?:string, description?: string, body?: string)
 	{
 		this.Guid = this.guid();
 		this.Id = id;
 		this.Type = type;
-		this.Title = title;	
-		this.Description = description;	
-	}	
+		this.Title = title;
+		this.Description = description;
+		this.Body = body;
+	}
 
 	OnClick()
-	{ 
+	{
 		let message = 'OnClick METHOD MUST BE IMPLEMENTED BY CHILD COMPONENT TO CdfMediaModel';
 		console.log('ERROR:', message);
 	};
 
-	private guid() 
+	private guid()
 	{
-		function s4() 
+		function s4()
 		{
 			return Math.floor((1 + Math.random()) * 0x10000)
 			.toString(16)
@@ -31,5 +33,5 @@ export class CdfRootModel
 		}
 
 		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-	}	
+	}
 }
