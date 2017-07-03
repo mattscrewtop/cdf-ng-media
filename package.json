@@ -1,8 +1,8 @@
 {
-  "name": "@cdf/cdf-ng-media",
+  "name": "@civilocity/cdf-ng-media",
   "version": "1.2.4",
   "author": "Tom Schreck <tom_schreck@solutiaconsulting.com> (http://solutiaconsulting.com)",
-  "homepage": "https://github.com/SolutiaConsulting/cdf-ng-media#readme",  
+  "homepage": "https://github.com/TitoAgudelo/cdf-ng-media#readme",
   "license": "MIT",
   "description": "Angular module for displaying media assets (images, videos)",
   "main": "index.js",
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SolutiaConsulting/cdf-ng-media.git"
+    "url": "git+https://github.com/TitoAgudelo/cdf-ng-media.git"
   },
   "bugs": {
-    "url": "https://github.com/SolutiaConsulting/cdf-ng-media/issues"
+    "url": "https://github.com/TitoAgudelo/cdf-ng-media.git/issues"
   },
   "typings": "./lib/index.d.ts",
   "dependencies": {},
@@ -62,7 +62,7 @@
     "@types/jasmine": "^2.2.30",
     "@types/node": "^6.0.46",
     "cpx": "^1.5.0"
-  },  
+  },
   "keywords": [
     "Angular",
     "Media",
