@@ -1,4 +1,4 @@
-# CDF Media UI Module (@cdf/cdf-ng-media)
+# CDF Media UI Module (@titoagudelo/cdf-ng-media)
 [![version][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
