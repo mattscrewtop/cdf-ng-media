@@ -17,10 +17,10 @@ const jwPlayer = require('@cdf/cdf-ng-media/src/assets/lib/jwplayer-7.6.1/jwplay
 	selector: 'cdf-video-background',
 	template: `
 	<div [id]="videoPlayerId"></div>
-	<ng-content></ng-content>	
+	<ng-content></ng-content>
 	`,
 	styles: [ `
-	:host 
+	:host
 	{
 		height: 200px;
 	}
@@ -30,14 +30,14 @@ const jwPlayer = require('@cdf/cdf-ng-media/src/assets/lib/jwplayer-7.6.1/jwplay
 		height: inherit !important;
 	}
 
-	:host /deep/ .jw-error .jw-preview, 
-	:host /deep/ .jw-stretch-uniform .jw-preview, 
+	:host /deep/ .jw-error .jw-preview,
+	:host /deep/ .jw-stretch-uniform .jw-preview,
 	:host /deep/ .jwplayer .jw-preview,
 	:host /deep/ .jw-preview
 	{
 		background-position: top center !important;
 		background-size: cover !important;
-	}	
+	}
 	`]
 })
 export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
@@ -55,22 +55,22 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 	{
 	};
 
-	
+
 	ngOnInit()
 	{
 		this.jwPlayerKey = ClientConfigService.GetJwPlayerKey();
-		
+
 		window["jwplayer"] = jwPlayer;
 		jwPlayer.key = this.jwPlayerKey;
 
 		this.videoPlayerId = 'jwp_' + this.guid();
 	};
 
-	
+
 	ngAfterViewInit()
-	{ 
+	{
 		this.videoJWPlayer = jwPlayer(this.videoPlayerId);
-		
+
 		//console.log('Video Model', this.mediaModel);
 
 		//VIDEO URL
@@ -78,8 +78,8 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 		{
 			let playListSourceArray: Object[] = [];
 
-			//add video from array of types to play list			
-			for (var item of this.mediaModel.VideoList) 
+			//add video from array of types to play list
+			for (var item of this.mediaModel.VideoList)
 			{
 				playListSourceArray.push(
 					{
@@ -89,12 +89,12 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 						type: "mp4"
 					}
 				);
-			}			
-			
+			}
+
 			this.videoJWPlayer.setup
 				({
-					controls: false,
-					autostart: true,
+					controls: true,
+					autostart: false,
 					mute: true,
 					repeat: true,
 					height: "100%",
@@ -107,8 +107,8 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 							sources: playListSourceArray
 						}
 					]
-				});	
-		}	
+				});
+		}
 		else if (this.mediaModel.YouTubeId)
 		{
 			let videoUri = this.youTubeUrl + '' + this.mediaModel.YouTubeId
@@ -116,28 +116,28 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 			this.videoJWPlayer.setup
 				({
 					file: videoUri,
-					controls: false,
-					autostart: true,
+					controls: true,
+					autostart: false,
 					mute: true,
 					repeat: true,
 					mediaid: this.guid(),
 					stretching: "fill",
 					height: "100%",
 					width: "100%"
-				});				
+				});
 
 
-			this.videoJWPlayer.on('play', function (e) 
+			this.videoJWPlayer.on('play', function (e)
 			{
-				jwPlayer().setVolume(0);				
-			});				
+				jwPlayer().setVolume(0);
+			});
 		}
 	};
 
-	
-	guid() 
+
+	guid()
 	{
-		function s4() 
+		function s4()
 		{
 			return Math.floor((1 + Math.random()) * 0x10000)
 			.toString(16)
@@ -145,5 +145,5 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 		}
 
 		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-	};	
+	};
 }
