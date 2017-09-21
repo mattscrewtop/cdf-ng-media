@@ -14,3 +14,8 @@ Thumbs.db
 #*.js
 *.map
 *.d.ts
+
+# Yarn
+yarn-error.log
+yarn.lock
+.yarnclean
