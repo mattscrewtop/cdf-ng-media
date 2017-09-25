@@ -1,6 +1,6 @@
 {
   "name": "@titoagudelo/cdf-ng-media",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "author": "Tom Schreck <tom_schreck@solutiaconsulting.com> (http://solutiaconsulting.com)",
   "homepage": "https://github.com/TitoAgudelo/cdf-ng-media#readme",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "copy:assets": "cpx \"src/assets/**/*\" lib/assets",
     "copy:src": "cpx \"lib-temp/src/**/*\" lib",
     "copy": "npm run copy:assets && npm run copy:src",
-    "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
+    "ngc": "node_modules/.bin/ngc -p tsconfig.publish.json",
     "b": "npm run clean && npm run ngc && npm run copy && npm run clean:lib-temp"
   },
   "repository": {
