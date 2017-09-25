@@ -1,6 +1,5 @@
 {
-    "compilerOptions":
-    {
+    "compilerOptions": {
         "module": "commonjs",
         "moduleResolution": "node",
         "target": "es5",
@@ -14,11 +13,9 @@
         "outDir": "./lib",
         "stripInternal": true,
         "skipLibCheck": true,
-        "types": ["node"]
-    },
-    "angularCompilerOptions": {
-        "skipMetadataEmit" : false,
-        "strictMetadataEmit": true
+        "types": [
+            "node"
+        ]
     },
     "files": [
         "./src/index.ts",
