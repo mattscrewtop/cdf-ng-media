@@ -94,7 +94,7 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 			this.videoJWPlayer.setup
 				({
 					controls: true,
-					autostart: false,
+					autostart: true,
 					mute: true,
 					repeat: true,
 					height: "100%",
@@ -117,7 +117,7 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 				({
 					file: videoUri,
 					controls: true,
-					autostart: false,
+					autostart: true,
 					mute: true,
 					repeat: true,
 					mediaid: this.guid(),
