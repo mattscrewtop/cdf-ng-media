@@ -91,7 +91,7 @@ export class CdfVideoYouTubeComponent implements OnInit, AfterViewInit
 				({
 					file: videoUri,
 					image: this.mediaModel.ImageUri,
-					controls: true,
+					controls: false,
 					autostart: true,
 					mute: false,
 					repeat: false,

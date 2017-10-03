@@ -95,7 +95,7 @@ class View_CdfVideoYouTubeComponent_Host0 extends import2.AppView<any> {
   }
 }
 export const CdfVideoYouTubeComponentNgFactory:import8.ComponentFactory<import0.CdfVideoYouTubeComponent> = new import8.ComponentFactory<import0.CdfVideoYouTubeComponent>('cdf-video-youtube',View_CdfVideoYouTubeComponent_Host0,import0.CdfVideoYouTubeComponent);
-const styles_CdfVideoYouTubeComponent:any[] = ['[_nghost-%COMP%] \n	{\n		height: 100%;\n		width: 100%;\n	}\n\n	[_nghost-%COMP%]     .jwplayer\n	{\n		height: inherit !important;\n	}\n	\n	[_nghost-%COMP%]     .jw-error .jw-preview, [_nghost-%COMP%]     .jw-stretch-uniform .jw-preview, [_nghost-%COMP%]     .jwplayer .jw-preview, [_nghost-%COMP%]     .jw-preview\n	{\n		background-position: top center !important;\n		background-size: cover !important;\n	}	\n\n	[_nghost-%COMP%]     .jw-preview\n	{\n		transition: all 0.3s ease 0s;\n	}'];
+const styles_CdfVideoYouTubeComponent:any[] = ['[_nghost-%COMP%]\n	{\n		height: 100%;\n		width: 100%;\n	}\n\n	[_nghost-%COMP%]     .jwplayer\n	{\n		height: inherit !important;\n	}\n\n	[_nghost-%COMP%]     .jw-error .jw-preview, [_nghost-%COMP%]     .jw-stretch-uniform .jw-preview, [_nghost-%COMP%]     .jwplayer .jw-preview, [_nghost-%COMP%]     .jw-preview\n	{\n		background-position: top center !important;\n		background-size: cover !important;\n	}\n\n	[_nghost-%COMP%]     .jw-preview\n	{\n		transition: all 0.3s ease 0s;\n	}'];
 var renderType_CdfVideoYouTubeComponent:import4.RenderComponentType = import3.createRenderComponentType('',1,import5.ViewEncapsulation.Emulated,styles_CdfVideoYouTubeComponent,{});
 export class View_CdfVideoYouTubeComponent0 extends import2.AppView<import0.CdfVideoYouTubeComponent> {
   _text_0:any;
@@ -113,7 +113,7 @@ export class View_CdfVideoYouTubeComponent0 extends import2.AppView<import0.CdfV
     this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_2 = this.renderer.createText(parentRenderNode,'\n	',(null as any));
     this.projectNodes(parentRenderNode,0);
-    this._text_3 = this.renderer.createText(parentRenderNode,'	\n	',(null as any));
+    this._text_3 = this.renderer.createText(parentRenderNode,'\n	',(null as any));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
       this._el_1,
