@@ -1,5 +1,5 @@
 /**
- * @license Matt Ferrell v1.4.3
+ * @license Matt Ferrell v1.4.2
  * (c) 2016 Matt Ferrell https://github.com/mattscrewtop/cdf-ng-media
  * License: MIT
  */
