@@ -1,4 +1,4 @@
-# CDF Media UI Module (@mattscrewtop/cdf-ng-media)
+# CDF Media UI Module (@screwtopmedia/cdf-ng-media)
 [![version][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
@@ -45,7 +45,7 @@ CDF-NG-MEDIA requires a JW Player key in order for JW Player to work correctly. 
 
     //STEP 2: create a config file (cdf-media-config.ts) to provide configuration settings:
 
-    import { ConfigInterface } from '@mattscrewtop/cdf-ng-media/lib';
+    import { ConfigInterface } from '@screwtopmedia/cdf-ng-media/lib';
 
     export const CdfMediaConfig: ConfigInterface =
       {
