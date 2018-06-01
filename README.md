@@ -1,4 +1,4 @@
-# CDF Media UI Module (@screwtopmedia/cdf-ng-media)
+# CDF Media UI Module (@mattscrewtop/cdf-ng-media)
 [![version][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
@@ -45,7 +45,7 @@ CDF-NG-MEDIA requires a JW Player key in order for JW Player to work correctly. 
 
     //STEP 2: create a config file (cdf-media-config.ts) to provide configuration settings:
 
-    import { ConfigInterface } from '@screwtopmedia/cdf-ng-media/lib';
+    import { ConfigInterface } from '@mattscrewtop/cdf-ng-media/lib';
 
     export const CdfMediaConfig: ConfigInterface =
       {
@@ -56,7 +56,7 @@ CDF-NG-MEDIA requires a JW Player key in order for JW Player to work correctly. 
   //STEP 3: configure your AppModule:
 
     // app.module.ts
-    import { CdfModule } from '@screwtopmedia/cdf-ng/lib';
+    import { CdfModule } from '@cdf/cdf-ng/lib';
     import { CdfMediaConfig } from './configs';
 
     @NgModule({
@@ -161,11 +161,11 @@ Tom Schreck – [@tschreck](https://twitter.com/tschreck) – tom_schreck@soluti
 
 [MIT](https://opensource.org/licenses/MIT)
 
-[npm-image]: https://img.shields.io/npm/v/@cdf/cdf-ng-media.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/@cdf/cdf-ng-media
-[downloads-image]: https://img.shields.io/npm/dm/@cdf/cdf-ng-media.svg?style=flat-square
-[downloads-url]: https://npm-stat.com/charts.html?package=%40cdf%2Fcdf-ng-media&from=2017-03-01
-[license-image]: https://img.shields.io/npm/l/@cdf/cdf-ng-media.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/@screwtopmedia/cdf-ng-media.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@screwtopmedia/cdf-ng-media
+[downloads-image]: https://img.shields.io/npm/dm/@screwtopmedia/cdf-ng-media.svg?style=flat-square
+[downloads-url]: https://npm-stat.com/charts.html?package=%40screwtopmedia%2Fcdf-ng-media&from=2017-03-01
+[license-image]: https://img.shields.io/npm/l/@screwtopmedia/cdf-ng-media.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
 [jwplayer-url]:https://www.jwplayer.com/
 [cdf-url]:http://cdf.cloud/
