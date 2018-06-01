@@ -2,7 +2,7 @@ import
 {
 	ModuleWithProviders,
 	NgModule,
-	InjectionToken 
+	OpaqueToken 
 } 											from '@angular/core';
 import { CommonModule }						from '@angular/common';
 
@@ -18,7 +18,7 @@ import { ConfigInterface } 					from './models';
 import { ClientConfigService } 				from './services';
 
 
-export const CONFIG_DATA = new InjectionToken<string>('Config Data');
+export const CONFIG_DATA = new OpaqueToken('Config Data');
 export function configHelperFactory(config: ConfigInterface) 
 {
 	//console.log('------------------ MEDIA CONFIG DATA:', config);
