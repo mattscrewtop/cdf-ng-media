@@ -11,7 +11,7 @@ export class YouTubeService
 	//GET JW PLAYER KEY
 	static CreateMediaModelFromYouTubeJson(rawJson: any): CdfMediaModel
 	{
-		let resourceId: string = undefined;
+		let id: string = undefined;
 		let type: string = undefined;
 		let title: string = undefined;
 		let description: string = undefined;
@@ -22,9 +22,9 @@ export class YouTubeService
 		if (rawJson)
 		{ 
 			//SET YOUTUBE ID			
-			if(rawJson.resourceId && rawJson.resourceId.videoId)
+			if(rawJson.snippet.resourceId && rawJson.snippet.resourceId.videoId)
 			{
-				youTubeId = rawJson.resourceId.videoId;
+				youTubeId = rawJson.snippet.resourceId.videoId;
 			}
 
 			if(rawJson.snippet)
@@ -51,6 +51,6 @@ export class YouTubeService
 			}		
 		}
 		
-		return new CdfMediaModel(resourceId, type, title, description, imageUri, youTubeId, videoList);		
+		return new CdfMediaModel(id, type, title, description, imageUri, youTubeId, videoList);		
 	};
 }
