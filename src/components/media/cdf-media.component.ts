@@ -56,7 +56,7 @@ import { CdfVideoYouTubeComponent } 	from '../video/index';
 		display: inherit;
 		height: 200px;
 		overflow: hidden;
-		width: 200px;
+		width: auto;
 	}
 
 	:host:hover /deep/ .cdf-background-image,
