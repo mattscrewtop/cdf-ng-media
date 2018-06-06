@@ -29,7 +29,7 @@ CDF-NG-MEDIA requires the latest version of Angular (at the time of this writing
 CDF-NG-MEDIA also utilizes the following 3rd party sources:
 
 * [JW Player][jwplayer-url] as the vehicle for loading videos.  CDF-NG-MEDIA is currently using:
-  * JW Player version 7.6.1
+  * JW Player version 8.3.2
 
 
 # Installation
