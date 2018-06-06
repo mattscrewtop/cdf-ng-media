@@ -11,7 +11,7 @@ import
 import { CdfMediaModel }			from '../../models/index';
 import { ClientConfigService }		from '../../services';
 
-const jwPlayer = require('@screwtopmedia/cdf-ng-media/src/assets/lib/jwplayer-8.3.2/jwplayer.js');
+const jwPlayer = require('@screwtopmedia/cdf-ng-media/src/assets/lib/jwplayer-7.12.11/jwplayer.js');
 
 @Component({
 	selector: 'cdf-video-youtube',
