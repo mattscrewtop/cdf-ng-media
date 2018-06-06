@@ -11,7 +11,7 @@ import
 import { CdfMediaModel }			from '../../models/index';
 import { ClientConfigService }		from '../../services';
 
-const jwPlayer = require('@screwtopmedia/cdf-ng-media/src/assets/lib/jwplayer-7.6.1/jwplayer.js');
+const jwPlayer = require('@screwtopmedia/cdf-ng-media/src/assets/lib/jwplayer-8.4.0-beta.1/jwplayer.js');
 
 @Component({
 	selector: 'cdf-video-background',
@@ -108,6 +108,11 @@ export class CdfVideoBackgroundComponent implements OnInit, AfterViewInit
 						}
 					]
 				});
+				
+			this.videoJWPlayer.on('play', function (e)
+			{
+				jwPlayer().setVolume(0);
+			});
 		}
 		else if (this.mediaModel.YouTubeId)
 		{
